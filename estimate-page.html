@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Estimate form</title>
   <link rel="stylesheet" href="index.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -10,23 +10,34 @@
 </head>
 
 <header id="formpage-header">
-  <div class="company-name">
-    <p class="top">Floor Professional</p>
-    <p class="bottom">Bow Line Services Inc,.</p>
-</div>
-
-  <nav>
-    <ul class="nav-bars" id="formpage-nav formpage-nav-bottom">
-      <li class="bottom-list" id="bottom-li-home"><a href="file:///D:/my-portfolio/bowline-services2/bowlineservices.html">home</a></li>
-      <li class="bottom-list"><a href="#contact">contact</a></li>
-      <a href="#estimate"><button class="btn-bottom">free estimate</button></a>
-    </ul>
- </nav>
+               <div class="company-name" id="form-page-company-name">
+                      <a href="file:///D:/my-portfolio/bowline-services2/index.html"><p class="top">Floor Professional</p>
+                       <p class="bottom">Bow Line Services Inc,.</p></a>
+                 </div>
+               <aside class="formpage-aside">
+                               <nav class="form-page-nav">
+                                       <ul class="nav-bars" id="formpage-nav formpage-nav-bottom">
+                                                      <li class="bottom-list display-none"id="bottom-li-home"><a href="file:///D:/my-portfolio/bowline-services2/index.html">home</a></li>
+                                                      <li class="bottom-list display-none"><a href="#contact formpage-footer">contact</a></li>
+                                                      <a href="#estimate"><button class="btn-bottom">free estimate</button></a>
+                                       </ul>
+                          
+                          </nav>
+                </aside>
+                <div class="topnav">
+                  <div id="myLinks">
+                  <a href="file:///D:/my-portfolio/bowline-services2/index.html">home</a>
+                  <a href="#contact formpage-footer">contact</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" id="form-page"onclick="myFunction()">
+                <img src="img/humberger-icon.png">
+                </a>
+                </div>
 </header>
 <body>
   <main>
     <div class="hero-area" id="home">
-      <img src="img/estimate-form-page.png" alt="formpage-hero-area-image" class="hero-image"  id="formpage-hero" width="1090">
+      <div class="hero-img-form-page"><h1><i>Estimate Form</i></h1></div>
     </div>
     <div class="form" id="estimate">
       <div class="cognito">
@@ -39,9 +50,9 @@
   <footer class="footer-area formpage"  id="contact formpage-footer">
     <h3 class="formpage">Contact Us</h3>      
    <div class="footer-whole" id="formpage-footerwhole">
-    <div class="footer-right">
-             <div class="bussiness-hours-image">
-               <img src="img/clock.png" alt="clock" class="clock" width="20">
+    <div class="footer-right" id="form-page-footer-right">
+             <div class="bussiness-hours-image" id="bussinness-hrs-img">
+               <img src="img/clock.png" alt="clock" class="clock" width="20"  id="img-clock">
                      <p>bussiness hours</p>
             </div>
               <div class="footer-right-bottom">
@@ -49,21 +60,31 @@
                      <P class="sunday-holiday" id="sun-holi">Sunday and Holiday: OFF</P>
               </div>       
    </div>
-  <div class="footer-left">
+  <div class="footer-left" id="form-page-footer-left">
     <div class="email">
       <img src="img/email.png" alt="email-image" class="email-image" width="20">
       <a href="mailto:fatih.taiga@gmail.com">fatih.taiga@gmail.com</a>
     </div>
     <div class="phone-number">
        <img src="img/phone-call.png" alt="phone-imag" class="phone-image" width="20">
-       <p><a href ="tel:403-471-7624">403-471-7624</a></p>
+       <p class="form-phone-number"><a href ="tel:403-471-7624">403-471-7624</a></p>
     </div>
    </div>  
    </div>
-   <div class="footer-bottom">
+   <div class="footer-bottom" id="forma-page-footer-bottom">
     <div class="footer-footer-bottom-p">
     <p class="footer-p">Copyright© By Bow Line Services Inc,.</p>
     <p class="footer-p">SEO, web designed and developed by Minako Polat</p>
   </div>
    </footer>
+   <script>
+            function myFunction() {
+                   var x = document.getElementById("myLinks");
+                       if (x.style.display === "block") {
+                       x.style.display = "none";
+                      } else {
+                       x.style.display = "block";
+                                }
+                          } 
+    </script>
 </body>
