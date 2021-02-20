@@ -118,7 +118,7 @@ color:#f47c14;
 }
 
 button.nav-btn{
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   margin-top:0;
   margin-left: 10px;
 }
@@ -279,12 +279,13 @@ div.email a{
 }
 
 img.clock{
-  margin-right: 20px;
+  margin-right: 0px;
 }
 
 .footer-right{
   margin-top: 30px;
   padding-right:0;
+  max-width:100%;
 }
 
 .footer-left{
@@ -359,6 +360,9 @@ img.phone-img{
 
 .about-us-pic{
   width: 400px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 
@@ -480,15 +484,11 @@ p.form-phone-number a{
 
 
 div#form-page-footer-right{
-  max-width: 40%;
+  max-width: 60%;
   margin-top: 50px;
   margin-left: 50px;
-  text-align: center;
 }
 
-div.footer-bottom{
-  
-}
 
 .showcase{
   width: 100%;
@@ -537,7 +537,10 @@ a:hover{
  .bussiness-hours-image{
    display: flex;
    flex-direction: row;
-   padding-left: 30px;
+   margin-left: 0px;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
  }
 
  .phone-number{
@@ -678,7 +681,7 @@ a:hover{
   
   img.about-us-img{
     width: 100%;
-    margin-left: 0;
+    margin-left: 30px; 
   }
 
   footer.footer-area{
@@ -790,7 +793,7 @@ padding-top: 200px;
   ul.nav-bars{
     float: right;
     margin-right: 50px;
-    margin-top: 5px;
+    margin-top: 3px;
   }
 
   aside.main-aside{
@@ -845,8 +848,8 @@ li#footer-nav a{
       }
 
  div.about-us{
-  min-height: 800px;
-  margin-top: 200px;
+  min-height: 950px;
+  margin-top: 100px;
 }
 
 div.about-us-devide{
@@ -864,8 +867,9 @@ div.about-us-devide{
 
 img.about-us-img{
 width: 80%;
-text-align: center;
-margin-bottom: 100px;
+justify-content: center;
+align-items: center;
+margin-bottom: 50px;
 }
 
   div.row{
@@ -907,7 +911,7 @@ div.footer-bottom{
 }
 
 p.days-in-a-week{
-  width: 100%;
+  max-width: 100%;
   font-size: 20px;
   margin-left:0;
 }
@@ -916,9 +920,6 @@ p#off{
   margin-left: 30px;
 }
 
-.bussiness-hours-image{
-  margin-left: 80px;
-}
 
 p.hours{
   width: 50%;
@@ -953,13 +954,13 @@ a#form-page.icon{
  }
 
 div.bussiness-hours-image{
- margin-left: 60px;
- padding-left: 0;
+ margin: 0 auto;
+ text-align: center;
 }
 
  div#bussinness-hrs-img{
- margin-left: 0;
  padding-left: 0;
+ 
  }
 
  img#img-clock{
@@ -1058,13 +1059,13 @@ img.about-us-img{
    } 
 
 
-div.footer-right{
+/* div.footer-right{
   width:100%;
-}
+} */
 
-   div.footer-left{
+   /* div.footer-left{
      margin-left: 50px;
-   }
+   } */
 
 
    /*    form-page desktop 1000px     */
